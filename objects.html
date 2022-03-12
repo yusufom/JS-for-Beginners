@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Creating Objects</h1> 
+    <p id="demo"></p>
+    <!-- <button id="click me">Click Me</button> -->
+<!-- <script>
+    var student = {
+        name: "Chris",
+        age: 21,
+        studies: "Computer Science",
+    };
+    document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studies " + student.study
+    var student = new Object()
+    student.name = "Bukola"
+    student.age = "32"
+    student.studies = 'Computer science'
+    document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studies " + student.study
+
+</script> -->
+<!-- <script>
+    var student = stud("Olamilekan", 21, "Materials Science");
+    function stud(name, age, studies){
+        this.name = name;
+        this.age = age;
+        this.studies = studies;
+    };
+    document.getElementById("demo").innerHTML = this.name + " of the age " + this.age + " studies " + this.studies
+
+
+</script> -->
+<!-- <script>
+    let user = {
+        name:'Chirs',
+        age: 24,
+    };
+    function sayHi(){
+        alert("Hello!")
+    }
+    user.message = sayHi;
+    document.getElementById("demo").innerHTML = "Hi" + user.name
+    document.getElementById("click me").onclick = user.message
+</script> -->
+<script>
+    var car = {
+        model:"BMW",
+        color: "Red",
+        fuel_type:"diesel",
+        get fuel(){
+            return this.fuel_type
+        }
+    };
+    document.getElementById("demo").innerHTML = car.fuel
+</script>
+<script>
+    var car = {
+        model:"BMW",
+        color: "Red",
+        fuel_type:"",
+        set fuel(fuel){
+            this.fuel_type = fuel
+        }
+    }
+    car.fuel = "Petrol";
+    document.getElementById("demo").innerHTML = car.fuel_type
+</script>
+</body>
+</html>

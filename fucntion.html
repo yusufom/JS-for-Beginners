@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<p id="demo"></p>
+<body>
+    <!-- <script>
+        function my_value(val){
+            document.getElementById("demo").innerHTML = val * val
+        }
+        my_value(5)
+    </script> -->
+    <!-- <script>
+        let x = function(){
+            alert("Hello")
+        };
+        let y = x
+        document.getElementById("demo").innerHTML = y()
+    </script> -->
+    <!-- <script>
+        var myFunction = new Function('a','b','return a+b')
+        var m = myFunction(2,3)
+        document.getElementById('demo').innerHTML = "the sum is " + m 
+    </script> -->
+    <!-- <script>
+        // self invoking functions
+        (function(){
+            alert('Hello')
+        })()
+    </script> -->
+    <!-- <script>
+         const MyFunc = (a,b,c) => {return a*b*c}
+         let v = MyFunc(2,3,4)
+         document.getElementById("demo").innerHTML = v
+    </script> -->
+<script>
+    function* generateFunc(){
+        yield 1;
+        yield 2;
+        return 3;
+    }
+    let generator = generateFunc();
+    let one = generator.next();
+    let two = generator.next();
+    let three = generator.next();
+    alert(JSON.stringify(one));
+    alert(JSON.stringify(two));
+    alert(JSON.stringify(three));
+</script>
+</body>
+</html>
